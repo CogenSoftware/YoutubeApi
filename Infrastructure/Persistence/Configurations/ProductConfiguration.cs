@@ -1,4 +1,3 @@
-using Bogus;
 using Core.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
@@ -21,47 +20,52 @@ namespace Infrastructure.Persistence.Configurations
                 .IsRequired();
 
             builder.Property(p => p.Price)
-                .IsRequired();
+                .IsRequired()
+                .HasPrecision(18, 4);
 
             builder.Property(p => p.Discount)
-                .IsRequired();
+                .IsRequired()
+                .HasPrecision(5, 2);
 
-            Faker faker = new("tr");
             Product product1 = new()
             {
                 Id = 1,
                 BrandId = 1,
-                Title = faker.Commerce.ProductName(),
-                Description = faker.Lorem.Paragraph(2),
-                Price = decimal.Parse(faker.Commerce.Price()),
-                Discount = decimal.Parse(faker.Commerce.Price(0, 100)),
+                Title = "Product Title 1",
+                Description = "Product Description 1",
+                Price = 100,
+                Discount = 10,
+                CreatedDate = new DateTime(2023, 1, 1, 0, 0, 0, DateTimeKind.Utc),
             };
             Product product2 = new()
             {
                 Id = 2,
                 BrandId = 2,
-                Title = faker.Commerce.ProductName(),
-                Description = faker.Lorem.Paragraph(2),
-                Price = decimal.Parse(faker.Commerce.Price()),
-                Discount = decimal.Parse(faker.Commerce.Price(0, 100)),
+                Title = "Product Title 2",
+                Description = "Product Description 2",
+                Price = 200,
+                Discount = 20,
+                CreatedDate = new DateTime(2023, 1, 1, 0, 0, 0, DateTimeKind.Utc),
             };
             Product product3 = new()
             {
                 Id = 3,
                 BrandId = 3,
-                Title = faker.Commerce.ProductName(),
-                Description = faker.Lorem.Paragraph(2),
-                Price = decimal.Parse(faker.Commerce.Price()),
-                Discount = decimal.Parse(faker.Commerce.Price(0, 100)),
+                Title = "Product Title 3",
+                Description = "Product Description 3",
+                Price = 300,
+                Discount = 30,
+                CreatedDate = new DateTime(2023, 1, 1, 0, 0, 0, DateTimeKind.Utc),
             };
             Product product4 = new()
             {
                 Id = 4,
                 BrandId = 1,
-                Title = faker.Commerce.ProductName(),
-                Description = faker.Lorem.Paragraph(2),
-                Price = decimal.Parse(faker.Commerce.Price()),
-                Discount = decimal.Parse(faker.Commerce.Price(0, 100)),
+                Title = "Product Title 4",
+                Description = "Product Description 4",
+                Price = 400,
+                Discount = 40,
+                CreatedDate = new DateTime(2023, 1, 1, 0, 0, 0, DateTimeKind.Utc),
             };
 
             builder.HasData(product1, product2, product3, product4);

@@ -1,4 +1,3 @@
-using Bogus;
 using Core.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
@@ -13,22 +12,23 @@ namespace Persistence.Configurations
                  .IsRequired()
                  .HasMaxLength(100);
 
-            Faker faker = new("tr");
-
             Brand brand1 = new()
             {
                 Id = 1,
-                Name = faker.Company.CompanyName()
+                Name = "Toyota",
+                CreatedDate = new DateTime(2023, 1, 1, 0, 0, 0, DateTimeKind.Utc),
             };
             Brand brand2 = new()
             {
                 Id = 2,
-                Name = faker.Company.CompanyName()
+                Name = "Ford",
+                CreatedDate = new DateTime(2023, 1, 1, 0, 0, 0, DateTimeKind.Utc),
             };
             Brand brand3 = new()
             {
                 Id = 3,
-                Name = faker.Company.CompanyName()
+                Name = "Honda",
+                CreatedDate = new DateTime(2023, 1, 1, 0, 0, 0, DateTimeKind.Utc),
             };
 
             builder.HasData(brand1, brand2, brand3);

@@ -1,4 +1,3 @@
-using Bogus;
 using Core.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
@@ -20,35 +19,37 @@ namespace Infrastructure.Persistence.Configurations
             builder.Property(c => c.Priority)
             .IsRequired();
 
-            Faker faker = new("tr");
-
             Category category1 = new()
             {
                 Id = 1,
                 ParentId = 0,
-                Name = faker.Commerce.Categories(1)[0],
-                Priority = 1
+                Name = "Electronics",
+                Priority = 1,
+                CreatedDate = new DateTime(2023, 1, 1, 0, 0, 0, DateTimeKind.Utc),
             };
             Category category2 = new()
             {
                 Id = 2,
                 ParentId = 0,
-                Name = faker.Commerce.Categories(1)[0],
-                Priority = 1
+                Name = "Fashion",
+                Priority = 1,
+                CreatedDate = new DateTime(2023, 1, 1, 0, 0, 0, DateTimeKind.Utc),
             };
             Category category3 = new()
             {
                 Id = 3,
                 ParentId = 1,
-                Name = faker.Commerce.Categories(1)[0],
-                Priority = 1
+                Name = "Smartphones",
+                Priority = 1,
+                CreatedDate = new DateTime(2023, 1, 1, 0, 0, 0, DateTimeKind.Utc),
             };
             Category category4 = new()
             {
                 Id = 4,
                 ParentId = 2,
-                Name = faker.Commerce.Categories(1)[0],
-                Priority = 1
+                Name = "Men's Fashion",
+                Priority = 1,
+                CreatedDate = new DateTime(2023, 1, 1, 0, 0, 0, DateTimeKind.Utc),
             };
 
             builder.HasData(category1, category2, category3, category4);
