@@ -2,6 +2,22 @@
   "version": 3,
   "targets": {
     "net9.0": {
+      "AutoMapper/14.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Options": "8.0.0"
+        },
+        "compile": {
+          "lib/net8.0/AutoMapper.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/AutoMapper.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Azure.Core/1.38.0": {
         "type": "package",
         "dependencies": {
@@ -1757,6 +1773,21 @@
           "bin/placeholder/Domain.dll": {}
         }
       },
+      "Mapper/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "Application": "1.0.0",
+          "AutoMapper": "14.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "9.0.5"
+        },
+        "compile": {
+          "bin/placeholder/Mapper.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Mapper.dll": {}
+        }
+      },
       "Persistence/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
@@ -1776,6 +1807,21 @@
     }
   },
   "libraries": {
+    "AutoMapper/14.0.0": {
+      "sha512": "OC+1neAPM4oCCqQj3g2GJ2shziNNhOkxmNB9cVS8jtx4JbgmRzLcUOxB9Tsz6cVPHugdkHgCaCrTjjSI0Z5sCQ==",
+      "type": "package",
+      "path": "automapper/14.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "automapper.14.0.0.nupkg.sha512",
+        "automapper.nuspec",
+        "icon.png",
+        "lib/net8.0/AutoMapper.dll",
+        "lib/net8.0/AutoMapper.xml"
+      ]
+    },
     "Azure.Core/1.38.0": {
       "sha512": "IuEgCoVA0ef7E4pQtpC3+TkPbzaoQfa77HlfJDmfuaJUCVJmn7fT0izamZiryW5sYUFKizsftIxMkXKbgIcPMQ==",
       "type": "package",
@@ -5228,6 +5274,11 @@
       "path": "../../Core/Domain/Domain.csproj",
       "msbuildProject": "../../Core/Domain/Domain.csproj"
     },
+    "Mapper/1.0.0": {
+      "type": "project",
+      "path": "../../Core/Mapper/Mapper.csproj",
+      "msbuildProject": "../../Core/Mapper/Mapper.csproj"
+    },
     "Persistence/1.0.0": {
       "type": "project",
       "path": "../../Infrastructure/Persistence/Persistence.csproj",
@@ -5236,6 +5287,7 @@
   },
   "projectFileDependencyGroups": {
     "net9.0": [
+      "Mapper >= 1.0.0",
       "Microsoft.AspNetCore.OpenApi >= 9.0.5",
       "Microsoft.EntityFrameworkCore.Design >= 9.0.5",
       "Persistence >= 1.0.0",
@@ -5276,6 +5328,9 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
+            "C:\\Users\\Cogen\\OneDrive\\Desktop\\Deneme\\YoutubeApi\\Core\\Mapper\\Mapper.csproj": {
+              "projectPath": "C:\\Users\\Cogen\\OneDrive\\Desktop\\Deneme\\YoutubeApi\\Core\\Mapper\\Mapper.csproj"
+            },
             "C:\\Users\\Cogen\\OneDrive\\Desktop\\Deneme\\YoutubeApi\\Infrastructure\\Persistence\\Persistence.csproj": {
               "projectPath": "C:\\Users\\Cogen\\OneDrive\\Desktop\\Deneme\\YoutubeApi\\Infrastructure\\Persistence\\Persistence.csproj"
             }

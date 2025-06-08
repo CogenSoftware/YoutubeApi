@@ -17,6 +17,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\Infrastructure\Persistence\Persistence.csproj" />
+    <ProjectReference Include="..\..\Core\Mapper\Mapper.csproj" />
   </ItemGroup>
 
 </Project>
