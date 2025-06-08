@@ -1,0 +1,12 @@
+C:\Users\Cogen\OneDrive\Desktop\Deneme\YoutubeApi\Core\Application\bin\Debug\net9.0\Application.deps.json
+C:\Users\Cogen\OneDrive\Desktop\Deneme\YoutubeApi\Core\Application\bin\Debug\net9.0\Application.dll
+C:\Users\Cogen\OneDrive\Desktop\Deneme\YoutubeApi\Core\Application\bin\Debug\net9.0\Application.pdb
+C:\Users\Cogen\OneDrive\Desktop\Deneme\YoutubeApi\Core\Application\obj\Debug\net9.0\Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Cogen\OneDrive\Desktop\Deneme\YoutubeApi\Core\Application\obj\Debug\net9.0\Application.AssemblyInfoInputs.cache
+C:\Users\Cogen\OneDrive\Desktop\Deneme\YoutubeApi\Core\Application\obj\Debug\net9.0\Application.AssemblyInfo.cs
+C:\Users\Cogen\OneDrive\Desktop\Deneme\YoutubeApi\Core\Application\obj\Debug\net9.0\Application.csproj.CoreCompileInputs.cache
+C:\Users\Cogen\OneDrive\Desktop\Deneme\YoutubeApi\Core\Application\obj\Debug\net9.0\Application.sourcelink.json
+C:\Users\Cogen\OneDrive\Desktop\Deneme\YoutubeApi\Core\Application\obj\Debug\net9.0\Application.dll
+C:\Users\Cogen\OneDrive\Desktop\Deneme\YoutubeApi\Core\Application\obj\Debug\net9.0\refint\Application.dll
+C:\Users\Cogen\OneDrive\Desktop\Deneme\YoutubeApi\Core\Application\obj\Debug\net9.0\Application.pdb
+C:\Users\Cogen\OneDrive\Desktop\Deneme\YoutubeApi\Core\Application\obj\Debug\net9.0\ref\Application.dll

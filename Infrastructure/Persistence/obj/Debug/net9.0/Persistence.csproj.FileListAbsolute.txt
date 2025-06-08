@@ -1,0 +1,12 @@
+C:\Users\Cogen\OneDrive\Desktop\Deneme\YoutubeApi\Infrastructure\Persistence\bin\Debug\net9.0\Persistence.deps.json
+C:\Users\Cogen\OneDrive\Desktop\Deneme\YoutubeApi\Infrastructure\Persistence\bin\Debug\net9.0\Persistence.dll
+C:\Users\Cogen\OneDrive\Desktop\Deneme\YoutubeApi\Infrastructure\Persistence\bin\Debug\net9.0\Persistence.pdb
+C:\Users\Cogen\OneDrive\Desktop\Deneme\YoutubeApi\Infrastructure\Persistence\obj\Debug\net9.0\Persistence.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Cogen\OneDrive\Desktop\Deneme\YoutubeApi\Infrastructure\Persistence\obj\Debug\net9.0\Persistence.AssemblyInfoInputs.cache
+C:\Users\Cogen\OneDrive\Desktop\Deneme\YoutubeApi\Infrastructure\Persistence\obj\Debug\net9.0\Persistence.AssemblyInfo.cs
+C:\Users\Cogen\OneDrive\Desktop\Deneme\YoutubeApi\Infrastructure\Persistence\obj\Debug\net9.0\Persistence.csproj.CoreCompileInputs.cache
+C:\Users\Cogen\OneDrive\Desktop\Deneme\YoutubeApi\Infrastructure\Persistence\obj\Debug\net9.0\Persistence.sourcelink.json
+C:\Users\Cogen\OneDrive\Desktop\Deneme\YoutubeApi\Infrastructure\Persistence\obj\Debug\net9.0\Persistence.dll
+C:\Users\Cogen\OneDrive\Desktop\Deneme\YoutubeApi\Infrastructure\Persistence\obj\Debug\net9.0\refint\Persistence.dll
+C:\Users\Cogen\OneDrive\Desktop\Deneme\YoutubeApi\Infrastructure\Persistence\obj\Debug\net9.0\Persistence.pdb
+C:\Users\Cogen\OneDrive\Desktop\Deneme\YoutubeApi\Infrastructure\Persistence\obj\Debug\net9.0\ref\Persistence.dll
