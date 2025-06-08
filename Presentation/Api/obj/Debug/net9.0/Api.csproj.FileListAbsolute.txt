@@ -172,3 +172,5 @@ C:\Users\Cogen\OneDrive\Desktop\Deneme\YoutubeApi\Presentation\Api\bin\Debug\net
 C:\Users\Cogen\OneDrive\Desktop\Deneme\YoutubeApi\Presentation\Api\bin\Debug\net9.0\Domain.pdb
 C:\Users\Cogen\OneDrive\Desktop\Deneme\YoutubeApi\Presentation\Api\bin\Debug\net9.0\Application.dll
 C:\Users\Cogen\OneDrive\Desktop\Deneme\YoutubeApi\Presentation\Api\bin\Debug\net9.0\Application.pdb
+C:\Users\Cogen\OneDrive\Desktop\Deneme\YoutubeApi\Presentation\Api\bin\Debug\net9.0\MediatR.dll
+C:\Users\Cogen\OneDrive\Desktop\Deneme\YoutubeApi\Presentation\Api\bin\Debug\net9.0\MediatR.Contracts.dll
