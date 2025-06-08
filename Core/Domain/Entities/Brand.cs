@@ -9,6 +9,6 @@ namespace Core.Domain.Entities
         {
             Name = name;
         }
-        public required string Name { get; set; } = null!;
+        public string Name { get; set; } = null!;
     }
 }

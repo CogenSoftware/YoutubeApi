@@ -13,9 +13,9 @@ namespace Core.Domain.Entities
             CategoryId = categoryId;
         }
 
-        public required string Title { get; set; } = null!;
-        public required string Description { get; set; } = null!;
-        public required int CategoryId { get; set; }
+        public string Title { get; set; } = null!;
+        public string Description { get; set; } = null!;
+        public int CategoryId { get; set; }
         public Category? Category { get; set; }
     }
 }
