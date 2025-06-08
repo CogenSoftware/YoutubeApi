@@ -16,3 +16,5 @@ C:\Users\Cogen\OneDrive\Desktop\Deneme\YoutubeApi\Infrastructure\Persistence\bin
 C:\Users\Cogen\OneDrive\Desktop\Deneme\YoutubeApi\Infrastructure\Persistence\obj\Debug\net9.0\Persistence.csproj.AssemblyReference.cache
 C:\Users\Cogen\OneDrive\Desktop\Deneme\YoutubeApi\Infrastructure\Persistence\obj\Debug\net9.0\Persiste.61C28332.Up2Date
 C:\Users\Cogen\OneDrive\Desktop\Deneme\YoutubeApi\Infrastructure\Persistence\obj\Debug\net9.0\Persistence.genruntimeconfig.cache
+C:\Users\Cogen\OneDrive\Desktop\Deneme\YoutubeApi\Infrastructure\Persistence\bin\Debug\net9.0\Application.dll
+C:\Users\Cogen\OneDrive\Desktop\Deneme\YoutubeApi\Infrastructure\Persistence\bin\Debug\net9.0\Application.pdb
