@@ -1,21 +1,21 @@
 var builder = WebApplication.CreateBuilder(args);
 
+
+builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen(c =>
-{
-    c.SwaggerDoc("v1", new() { Title = "Youtube API", Version = "v1" });
-});
+builder.Services.AddSwaggerGen();
+
+var env = builder.Environment;
+builder.Configuration.SetBasePath(env.ContentRootPath)
+    .AddJsonFile("appsettings.json", optional: false)
+    .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true);
 
 var app = builder.Build();
 
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
-    app.UseSwaggerUI(c =>
-    {
-        c.SwaggerEndpoint("/swagger/v1/swagger.json", "Youtube API V1");
-        c.RoutePrefix = string.Empty;
-    });
+    app.UseSwaggerUI();
 }
 
 app.UseAuthorization();

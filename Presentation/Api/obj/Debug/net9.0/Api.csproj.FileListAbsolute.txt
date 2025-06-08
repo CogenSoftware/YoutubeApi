@@ -35,3 +35,4 @@ C:\Users\Cogen\OneDrive\Desktop\Deneme\YoutubeApi\Presentation\Api\obj\Debug\net
 C:\Users\Cogen\OneDrive\Desktop\Deneme\YoutubeApi\Presentation\Api\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\Cogen\OneDrive\Desktop\Deneme\YoutubeApi\Presentation\Api\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\Cogen\OneDrive\Desktop\Deneme\YoutubeApi\Presentation\Api\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Cogen\OneDrive\Desktop\Deneme\YoutubeApi\Presentation\Api\bin\Debug\net9.0\appsettings.Production.json
