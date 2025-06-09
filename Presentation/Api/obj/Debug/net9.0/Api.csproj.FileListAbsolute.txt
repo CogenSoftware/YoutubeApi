@@ -187,3 +187,8 @@ C:\Users\Cogen\OneDrive\Desktop\Deneme\YoutubeApi\Presentation\Api\bin\Debug\net
 C:\Users\Cogen\OneDrive\Desktop\Deneme\YoutubeApi\Presentation\Api\bin\Debug\net9.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 C:\Users\Cogen\OneDrive\Desktop\Deneme\YoutubeApi\Presentation\Api\bin\Debug\net9.0\Microsoft.Extensions.Identity.Core.dll
 C:\Users\Cogen\OneDrive\Desktop\Deneme\YoutubeApi\Presentation\Api\bin\Debug\net9.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\Cogen\OneDrive\Desktop\Deneme\YoutubeApi\Presentation\Api\bin\Debug\net9.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Cogen\OneDrive\Desktop\Deneme\YoutubeApi\Presentation\Api\bin\Debug\net9.0\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\Cogen\OneDrive\Desktop\Deneme\YoutubeApi\Presentation\Api\bin\Debug\net9.0\Microsoft.Extensions.Options.ConfigurationExtensions.dll
+C:\Users\Cogen\OneDrive\Desktop\Deneme\YoutubeApi\Presentation\Api\bin\Debug\net9.0\Infrastructure.dll
+C:\Users\Cogen\OneDrive\Desktop\Deneme\YoutubeApi\Presentation\Api\bin\Debug\net9.0\Infrastructure.pdb
