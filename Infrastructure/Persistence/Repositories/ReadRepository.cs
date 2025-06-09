@@ -63,7 +63,7 @@ namespace Infrastructure.Persistence.Repositories
             return await query.Skip((currentPage - 1) * pageSize).Take(pageSize).ToListAsync();
         }
 
-        public async Task<T?> GetAsync(Expression<Func<T, bool>>? predicate = null,
+        public async Task<T> GetAsync(Expression<Func<T, bool>>? predicate = null,
             Func<IQueryable<T>, IIncludableQueryable<T, object>>? include = null,
             bool enableTracking = false)
         {
@@ -78,7 +78,10 @@ namespace Infrastructure.Persistence.Repositories
             if (include != null)
                 query = include(query);
 
-            return await query.FirstOrDefaultAsync();
+            var entity = await query.FirstOrDefaultAsync();
+            if (entity == null)
+                throw new InvalidOperationException("Entity not found.");
+            return entity;
         }
 
         public IQueryable<T> Find(Expression<Func<T, bool>>? predicate = null)
