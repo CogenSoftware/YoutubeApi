@@ -10,6 +10,8 @@ namespace Core.Application.Interfaces.Repositories
         Task<IList<T>> AddRangeAsync(IList<T> entities);
         Task<T> UpdateAsync(T entity);
         Task HardDeleteAsync(T entity);
+        Task HardDeleteRangeAsync(IList<T> entities);
         Task SoftDeleteAsync(T entity);
+        Task SoftDeleteRangeAsync(IList<T> entities);
     }
 }

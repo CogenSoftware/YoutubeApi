@@ -19,11 +19,6 @@ namespace Infrastructure.Persistence.Configurations
             builder.Property(d => d.CategoryId)
                 .IsRequired();
 
-            builder.HasOne(d => d.Category)
-                .WithMany(c => c.Details)
-                .HasForeignKey(d => d.CategoryId)
-                .OnDelete(DeleteBehavior.Cascade);
-
             Detail detail1 = new()
             {
                 Id = 1,

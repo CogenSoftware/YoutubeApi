@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Persistence.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20250608152238_AddCreatedDate")]
-    partial class AddCreatedDate
+    [Migration("20250609052719_InitialStart2")]
+    partial class InitialStart2
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -24,21 +24,6 @@ namespace Persistence.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
-
-            modelBuilder.Entity("CategoryProduct", b =>
-                {
-                    b.Property<int>("CategoriesId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("ProductsId")
-                        .HasColumnType("int");
-
-                    b.HasKey("CategoriesId", "ProductsId");
-
-                    b.HasIndex("ProductsId");
-
-                    b.ToTable("CategoryProduct");
-                });
 
             modelBuilder.Entity("Core.Domain.Entities.Brand", b =>
                 {
@@ -69,21 +54,21 @@ namespace Persistence.Migrations
                             Id = 1,
                             CreatedDate = new DateTime(2023, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             IsDeleted = false,
-                            Name = "Koyuncu - Özbey"
+                            Name = "Toyota"
                         },
                         new
                         {
                             Id = 2,
                             CreatedDate = new DateTime(2023, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             IsDeleted = false,
-                            Name = "Bademci - Özberk"
+                            Name = "Ford"
                         },
                         new
                         {
                             Id = 3,
                             CreatedDate = new DateTime(2023, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             IsDeleted = false,
-                            Name = "Akar , Kutlay and Yetkiner"
+                            Name = "Honda"
                         });
                 });
 
@@ -122,7 +107,7 @@ namespace Persistence.Migrations
                             Id = 1,
                             CreatedDate = new DateTime(2023, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             IsDeleted = false,
-                            Name = "Movies",
+                            Name = "Electronics",
                             ParentId = 0,
                             Priority = 1
                         },
@@ -131,7 +116,7 @@ namespace Persistence.Migrations
                             Id = 2,
                             CreatedDate = new DateTime(2023, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             IsDeleted = false,
-                            Name = "Jewelery",
+                            Name = "Fashion",
                             ParentId = 0,
                             Priority = 1
                         },
@@ -140,7 +125,7 @@ namespace Persistence.Migrations
                             Id = 3,
                             CreatedDate = new DateTime(2023, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             IsDeleted = false,
-                            Name = "Home",
+                            Name = "Smartphones",
                             ParentId = 1,
                             Priority = 1
                         },
@@ -149,7 +134,7 @@ namespace Persistence.Migrations
                             Id = 4,
                             CreatedDate = new DateTime(2023, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             IsDeleted = false,
-                            Name = "Music",
+                            Name = "Men's Fashion",
                             ParentId = 2,
                             Priority = 1
                         });
@@ -194,36 +179,36 @@ namespace Persistence.Migrations
                             Id = 1,
                             CategoryId = 1,
                             CreatedDate = new DateTime(2023, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
-                            Description = "Öyle voluptatem quia kulu et labore sit corporis dışarı sandalye. Non lambadaki blanditiis quia lambadaki velit ducimus dignissimos.",
+                            Description = "Detail Description 1",
                             IsDeleted = false,
-                            Title = "Voluptatem otobüs ve."
+                            Title = "Detail Title 1"
                         },
                         new
                         {
                             Id = 2,
                             CategoryId = 1,
                             CreatedDate = new DateTime(2023, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
-                            Description = "Okuma ea quasi oldular dolorem nostrum esse quasi architecto nemo. Nemo dağılımı ipsam incidunt kapının esse dolorem. Çıktılar consequuntur bilgiyasayarı commodi bahar çarpan ipsa voluptatem. İpsam değerli blanditiis kulu. Explicabo aliquam layıkıyla eum nisi.",
+                            Description = "Detail Description 2",
                             IsDeleted = false,
-                            Title = "Numquam ipsa eve."
+                            Title = "Detail Title 2"
                         },
                         new
                         {
                             Id = 3,
                             CategoryId = 2,
                             CreatedDate = new DateTime(2023, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
-                            Description = "Oldular filmini aut çorba bilgiyasayarı aperiam sevindi layıkıyla. Fugit voluptatem reprehenderit. Dolor için otobüs aut incidunt quaerat.",
+                            Description = "Detail Description 3",
                             IsDeleted = false,
-                            Title = "Sinema fugit ut."
+                            Title = "Detail Title 3"
                         },
                         new
                         {
                             Id = 4,
                             CategoryId = 2,
                             CreatedDate = new DateTime(2023, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
-                            Description = "Koştum totam voluptatem mi ea cezbelendi. Sandalye tv perferendis qui oldular sit nihil. Sit esse odio et düşünüyor nostrum beatae.",
+                            Description = "Detail Description 4",
                             IsDeleted = false,
-                            Title = "Qui ad labore."
+                            Title = "Detail Title 4"
                         });
                 });
 
@@ -273,61 +258,64 @@ namespace Persistence.Migrations
                         {
                             Id = 1,
                             BrandId = 1,
-                            CreatedDate = new DateTime(2025, 6, 8, 15, 22, 37, 779, DateTimeKind.Utc).AddTicks(962),
-                            Description = "Quasi consequatur consequatur commodi. Filmini okuma yazın koşuyorlar bilgiyasayarı tv accusantium yapacakmış. Okuma makinesi sarmal camisi.",
-                            Discount = 45.73m,
+                            CreatedDate = new DateTime(2023, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            Description = "Product Description 1",
+                            Discount = 10m,
                             IsDeleted = false,
-                            Price = 383.30m,
-                            Title = "Licensed Frozen Gloves"
+                            Price = 100m,
+                            Title = "Product Title 1"
                         },
                         new
                         {
                             Id = 2,
                             BrandId = 2,
-                            CreatedDate = new DateTime(2025, 6, 8, 15, 22, 37, 782, DateTimeKind.Utc).AddTicks(4152),
-                            Description = "Ratione filmini quia okuma et. Explicabo ullam yapacakmış eaque okuma exercitationem. Bilgisayarı deleniti kutusu. Beatae sokaklarda velit aspernatur magni ea odit. Dignissimos nesciunt duyulmamış doğru veritatis masaya ab.",
-                            Discount = 96.03m,
+                            CreatedDate = new DateTime(2023, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            Description = "Product Description 2",
+                            Discount = 20m,
                             IsDeleted = false,
-                            Price = 622.13m,
-                            Title = "Fantastic Rubber Soap"
+                            Price = 200m,
+                            Title = "Product Title 2"
                         },
                         new
                         {
                             Id = 3,
                             BrandId = 3,
-                            CreatedDate = new DateTime(2025, 6, 8, 15, 22, 37, 782, DateTimeKind.Utc).AddTicks(4396),
-                            Description = "Mutlu ipsa sunt sevindi sayfası velit sinema velit hesap voluptatem. Quia salladı kalemi. Dicta qui ullam vitae qui illo. İpsum dolorem quis.",
-                            Discount = 16.19m,
+                            CreatedDate = new DateTime(2023, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            Description = "Product Description 3",
+                            Discount = 30m,
                             IsDeleted = false,
-                            Price = 654.70m,
-                            Title = "Refined Steel Fish"
+                            Price = 300m,
+                            Title = "Product Title 3"
                         },
                         new
                         {
                             Id = 4,
                             BrandId = 1,
-                            CreatedDate = new DateTime(2025, 6, 8, 15, 22, 37, 782, DateTimeKind.Utc).AddTicks(4507),
-                            Description = "Sequi sokaklarda et beğendim molestiae qui karşıdakine ut. Consequatur aliquid gitti orta sıradanlıktan gül düşünüyor mutlu nostrum.",
-                            Discount = 88.69m,
+                            CreatedDate = new DateTime(2023, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            Description = "Product Description 4",
+                            Discount = 40m,
                             IsDeleted = false,
-                            Price = 138.66m,
-                            Title = "Awesome Steel Computer"
+                            Price = 400m,
+                            Title = "Product Title 4"
                         });
                 });
 
-            modelBuilder.Entity("CategoryProduct", b =>
+            modelBuilder.Entity("Core.Domain.Entities.ProductCategory", b =>
                 {
-                    b.HasOne("Core.Domain.Entities.Category", null)
-                        .WithMany()
-                        .HasForeignKey("CategoriesId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                    b.Property<int>("ProductId")
+                        .HasColumnType("int");
 
-                    b.HasOne("Core.Domain.Entities.Product", null)
-                        .WithMany()
-                        .HasForeignKey("ProductsId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                    b.Property<int>("CategoryId")
+                        .HasColumnType("int");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.HasKey("ProductId", "CategoryId");
+
+                    b.HasIndex("CategoryId");
+
+                    b.ToTable("ProductCategories");
                 });
 
             modelBuilder.Entity("Core.Domain.Entities.Detail", b =>
@@ -352,9 +340,35 @@ namespace Persistence.Migrations
                     b.Navigation("Brand");
                 });
 
+            modelBuilder.Entity("Core.Domain.Entities.ProductCategory", b =>
+                {
+                    b.HasOne("Core.Domain.Entities.Category", "Category")
+                        .WithMany("ProductCategories")
+                        .HasForeignKey("CategoryId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Core.Domain.Entities.Product", "Product")
+                        .WithMany("ProductCategories")
+                        .HasForeignKey("ProductId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Category");
+
+                    b.Navigation("Product");
+                });
+
             modelBuilder.Entity("Core.Domain.Entities.Category", b =>
                 {
                     b.Navigation("Details");
+
+                    b.Navigation("ProductCategories");
+                });
+
+            modelBuilder.Entity("Core.Domain.Entities.Product", b =>
+                {
+                    b.Navigation("ProductCategories");
                 });
 #pragma warning restore 612, 618
         }

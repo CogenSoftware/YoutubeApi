@@ -2,7 +2,7 @@ using Core.Domain.Common;
 
 namespace Core.Domain.Entities
 {
-    public class Category : EntityBase, IEntityBase
+    public class Category : EntityBase
     {
         public Category() { }
 
@@ -17,6 +17,6 @@ namespace Core.Domain.Entities
         public string Name { get; set; } = null!;
         public int Priority { get; set; }
         public ICollection<Detail> Details { get; set; } = new List<Detail>();
-        public ICollection<Product> Products { get; set; } = new List<Product>();
+        public ICollection<ProductCategory> ProductCategories { get; set; } = new List<ProductCategory>();
     }
 }

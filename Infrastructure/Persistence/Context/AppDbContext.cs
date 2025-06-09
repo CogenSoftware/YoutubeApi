@@ -13,6 +13,7 @@ namespace Infrastructure.Persistence.Context
         public DbSet<Category> Categories { get; set; } = null!;
         public DbSet<Detail> Details { get; set; } = null!;
         public DbSet<Product> Products { get; set; } = null!;
+        public DbSet<ProductCategory> ProductCategories { get; set; } = null!;
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

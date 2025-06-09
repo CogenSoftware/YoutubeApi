@@ -2,7 +2,7 @@ using Core.Domain.Common;
 
 namespace Core.Domain.Entities
 {
-    public class Detail : EntityBase, IEntityBase
+    public class Detail : EntityBase
     {
         public Detail() { }
 

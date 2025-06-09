@@ -39,10 +39,21 @@ namespace Infrastructure.Persistence.Repositories
             await Task.Run(() => table.Remove(entity));
         }
 
+        public async Task HardDeleteRangeAsync(IList<T> entities) => await Task.Run(() => table.RemoveRange(entities));
+
         public async Task SoftDeleteAsync(T entity)
         {
             entity.IsDeleted = true;
             await Task.Run(() => table.Update(entity));
+        }
+
+        public async Task SoftDeleteRangeAsync(IList<T> entities)
+        {
+            foreach (var entity in entities)
+            {
+                entity.IsDeleted = true;
+                await Task.Run(() => table.Update(entity));
+            }
         }
     }
 }

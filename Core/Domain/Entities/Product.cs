@@ -2,16 +2,17 @@ using Core.Domain.Common;
 
 namespace Core.Domain.Entities
 {
-    public class Product : EntityBase, IEntityBase
+    public class Product : EntityBase
     {
         public Product() { }
 
-        public Product(string title, string description, int brandId, decimal price)
+        public Product(string title, string description, int brandId, decimal price, decimal discount)
         {
             Title = title;
             Description = description;
             BrandId = brandId;
             Price = price;
+            Discount = discount;
         }
 
         public string Title { get; set; } = null!;
@@ -20,6 +21,6 @@ namespace Core.Domain.Entities
         public decimal Price { get; set; }
         public decimal Discount { get; set; }
         public Brand? Brand { get; set; }
-        public ICollection<Category> Categories { get; set; } = new List<Category>();
+        public ICollection<ProductCategory> ProductCategories { get; set; } = new List<ProductCategory>();
     }
 }

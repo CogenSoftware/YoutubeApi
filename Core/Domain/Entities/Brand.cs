@@ -2,7 +2,7 @@ using Core.Domain.Common;
 
 namespace Core.Domain.Entities
 {
-    public class Brand : EntityBase, IEntityBase
+    public class Brand : EntityBase
     {
         public Brand() { }
         public Brand(string name)
