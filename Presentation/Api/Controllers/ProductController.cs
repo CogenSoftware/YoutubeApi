@@ -3,6 +3,7 @@ using Core.Application.Features.Products.Command.DeleteProduct;
 using Core.Application.Features.Products.Command.UpdateProduct;
 using Core.Application.Features.Products.Queries.GetAllProducts;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Presentation.Api.Controllers
@@ -19,6 +20,7 @@ namespace Presentation.Api.Controllers
         }
 
         [HttpGet]
+        [Authorize]
         public async Task<IActionResult> GetAllProducts()
         {
             var result = await _mediator.Send(new GetAllProductsQueryRequest());

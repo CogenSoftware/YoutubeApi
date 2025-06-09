@@ -1,3 +1,4 @@
+using Core.Application.Features.Auth.Command.Login;
 using Core.Application.Features.Auth.Command.Register;
 using Core.Application.Features.Products.Command.CreateProduct;
 using Core.Application.Features.Products.Command.DeleteProduct;
@@ -24,6 +25,13 @@ namespace Presentation.Api.Controllers
         {
             await _mediator.Send(request);
             return StatusCode(StatusCodes.Status201Created);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Login(LoginCommandRequest request)
+        {
+            var response = await _mediator.Send(request);
+            return StatusCode(StatusCodes.Status200OK, response);
         }
     }
 }
