@@ -1,4 +1,5 @@
 using Core.Application;
+using Core.Application.Exceptions;
 using Core.Mapper;
 using Infrastructure.Persistence;
 
@@ -25,6 +26,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+app.ConfigureExceptionHandlingMiddleware();
 app.UseAuthorization();
 app.MapControllers();
 

@@ -177,3 +177,8 @@ C:\Users\Cogen\OneDrive\Desktop\Deneme\YoutubeApi\Presentation\Api\obj\Debug\net
 C:\Users\Cogen\OneDrive\Desktop\Deneme\YoutubeApi\Presentation\Api\obj\Debug\net9.0\Api.pdb
 C:\Users\Cogen\OneDrive\Desktop\Deneme\YoutubeApi\Presentation\Api\obj\Debug\net9.0\Api.genruntimeconfig.cache
 C:\Users\Cogen\OneDrive\Desktop\Deneme\YoutubeApi\Presentation\Api\obj\Debug\net9.0\ref\Api.dll
+C:\Users\Cogen\OneDrive\Desktop\Deneme\YoutubeApi\Presentation\Api\bin\Debug\net9.0\Newtonsoft.Json.dll
+C:\Users\Cogen\OneDrive\Desktop\Deneme\YoutubeApi\Presentation\Api\bin\Debug\net9.0\SendGrid.dll
+C:\Users\Cogen\OneDrive\Desktop\Deneme\YoutubeApi\Presentation\Api\bin\Debug\net9.0\StarkbankEcdsa.dll
+C:\Users\Cogen\OneDrive\Desktop\Deneme\YoutubeApi\Presentation\Api\bin\Debug\net9.0\FluentValidation.dll
+C:\Users\Cogen\OneDrive\Desktop\Deneme\YoutubeApi\Presentation\Api\bin\Debug\net9.0\FluentValidation.DependencyInjectionExtensions.dll
